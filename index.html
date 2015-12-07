@@ -15,20 +15,18 @@
 <body>
     <section class="intro">
         <div class="container">
-            <h1>social-feed.js</h1>
+            <h1>eldecantador.es</h1>
             <hr/>
-            <p>jQuery plugin which displays posts by a username and hashtag from the popular social networks:
-                <br/><i>Facebook</i>, <i>Instagram</i>, <i>Twitter</i>, <i>Google+</i>, <i>VK</i>.
-            </p>
+            <p>Vinos para probar            </p>
             <hr/>
             <div class="controls">
-                <a href='https://github.com/pavelk2/social-feed/' target='_blank' class='button'><i class="fa fa-github"></i> Get Started</a>
+                <a href='https://github.com/pavelk2/social-feed/' target='_blank' class='button'><i class="fa fa-github"></i> ¿Quieres que hablemos de ti?</a>
             </div>
         </div>
     </section>
     <section class="stripe">
         <div class="container field">
-            <input type="text" class="input field-left" value="@teslamotors, #teslamotors" id="query">
+            <input type="text" class="input field-left" value="@eldecantador, #wine" id="query">
             <button class='button field-right' id="button-update"><i class="fa fa-refresh"></i>
             </button>
         </div>
@@ -45,11 +43,7 @@
     </section>
     <section class="stripe">
         <div class="container field referral">
-            <p>If you like <i>social-feed.js</i>, you can support the developers by making a <a href="https://twitter.com/intent/tweet?hashtags=socialfeedjs&text=Open-source%20jQuery%20plugin%20to%20display%20posts%20from%20different%20social%20networks&tw_p=tweetbutton&url=http%3A%2F%2Fpavelk2.github.io%2Fsocial-feed%2F&via=pavelk2" target="_blank">tweet</a> and/or signing up via referral links on:</p>
-            <ul>
-                <li><a href="https://www.digitalocean.com/?refcode=22a9ed42f948" target="_blank">DigitalOcean</a> (you get 10$) </li>
-                <li><a href="http://mbsy.co/CodeSchool/18980243" target="_blank">CodeSchool</a></li>
-            </ul>
+    
         </div>
     </section>
     <!-- jQuery -->
@@ -126,6 +120,13 @@
             //then load new posts
             updateFeed();
         });
+
+        setTimeout(function() {
+             $('.social-feed-container').masonry({
+            // options
+            itemSelector: '.social-feed-element'
+              });
+            }, 3000);
 
     });
     </script>
