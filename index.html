@@ -124,8 +124,12 @@
              $('.social-feed-container').masonry({
             // options
             itemSelector: '.social-feed-element',
-             columnWidth: 100
-              });
+             columnWidth: 300,
+              gutter: 10,
+             isFitWidth: true,
+             isOriginLeft: false,
+             transitionDuration: '0.8s'
+		 });
             }, 3000);
 
     });

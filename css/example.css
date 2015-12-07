@@ -1,6 +1,6 @@
-.social-feed-element { margin-left: 10px; margin-top: 0px;
+.social-feed-element {width:300px; margin-left: 10px; margin-top: 0px;
 margin-bottom: 10px;}
-.social-feed-container {width: 100%;}
+.social-feed-container {width: 1400px; }
 
 
 body {
@@ -15,7 +15,8 @@ body {
 
 .container {
   display: inline-block;
-  width: 100%; }
+  width: 100%; 
+}
 
 /*sections*/
 section, .intro, .stripe {
