@@ -17,7 +17,7 @@
         <div class="container">
             <h1>eldecantador.es</h1>
             <hr/>
-            <p>Vinos para probar            </p>
+            <p>No somos expertos, ni enólogos, ni sumillers, ni bodegueros.., o sí. Pero aquí simplemente nos encanta el vino</p>
             <hr/>
             <div class="controls">
                 <a href='https://github.com/pavelk2/social-feed/' target='_blank' class='button'><i class="fa fa-github"></i> ¿Quieres que hablemos de ti?</a>
@@ -26,8 +26,8 @@
     </section>
     <section class="stripe">
         <div class="container field">
-            <input type="text" class="input field-left" value="@eldecantador, #wine" id="query">
-            <button class='button field-right' id="button-update"><i class="fa fa-refresh"></i>
+            <input type="text" class="input field-left" value="" id="">
+            <button class='button field-right' id="button-update"><i class="fa fa-refresh"></i> Suscríbete
             </button>
         </div>
     </section>
@@ -56,7 +56,9 @@
     <script src="bower_components/moment/min/moment.min.js"></script>
     <!-- Social-feed js -->
     <script src="js/jquery.socialfeed.js"></script>
-    <script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+
+     <script>
     $(document).ready(function() {
 
         var updateFeed = function() {
@@ -66,34 +68,34 @@
             $('.social-feed-container').socialfeed({
                 // FACEBOOK
                 facebook: {
-                    accounts: queryTags,
-                    limit: 2,
-                    access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c'
+                    accounts: ['eldecantador'],
+                    limit: 10,
+                    access_token: '396328980413798|nz1SpXw_k5wEuSg_3JB6MjqCtYg'
                 },
                 // GOOGLEPLUS
                 google: {
-                    accounts: queryTags,
+                    accounts: ,
                     limit: 2,
-                    access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg'
+                    access_token: ''
                 },
                 // Twitter
                 twitter: {
-                    accounts: queryTags,
-                    limit: 2,
+                    accounts: ['@eldecantador','#eldecantador','@brewsur','#weekendwine'],
+                    limit: 20,
                     consumer_key: 'fBYLddjlEdYP1wYjiaBnnKvZV', // make sure to have your app read-only
                     consumer_secret: 'zN8vNBD12VSiYbGisIAo6iUr76kfjbqCOun5ulBpZ5sGkh4hcL', // make sure to have your app read-only
                 },
                 // VKONTAKTE
                 vk: {
-                    accounts: queryTags,
+                    accounts: ,
                     limit: 2,
                     source: 'all'
                 },
                 // INSTAGRAM
                 instagram: {
-                    accounts: queryTags,
-                    limit: 2,
-                    client_id: '88b4730e0e2c4b2f8a09a6184af2e218',
+                    accounts: ['@eldecantador','#eldecantador','#weekendwine'],
+                    limit: 10,
+                    client_id: '',
                     access_token: ''
                 },
 
@@ -124,29 +126,24 @@
         setTimeout(function() {
              $('.social-feed-container').masonry({
             // options
-            itemSelector: '.social-feed-element'
+            itemSelector: '.social-feed-element',
+             columnWidth: 400
               });
             }, 3000);
 
     });
     </script>
     <!-- Remove this part on your website. This is only to track the popularity of the Social-feed plugin website-->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59783367-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-9938076-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 
 </html>

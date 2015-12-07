@@ -24,7 +24,7 @@ section, .intro, .stripe {
 
 .intro {
   font-weight: 100;
-  background-image: radial-gradient(ellipse farthest-side at 100% 100%, #85D8CE 10%, #085078 120%); }
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%, #D480BE 10%, #630E46 120%); }
   .intro .controls {
     margin: 20px 0px 0px 0px; }
 
